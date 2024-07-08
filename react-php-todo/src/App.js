@@ -85,7 +85,7 @@ function App() {
   }
 
   useEffect(() => {
-    if (!todos.length) {
+    if (!todos.length && !todoTask) {
       fetch("http://www.localhost:8000/todoserver.php", {
         headers: {
           "Content-Type": "application/json",
